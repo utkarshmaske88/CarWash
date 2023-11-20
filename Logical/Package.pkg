@@ -6,6 +6,7 @@
     <Object Type="File" Description="Global variables">Global.var</Object>
     <Object Type="Package" Description="Global libraries">Libraries</Object>
     <Object Type="File" Description="Global data types">MNG_Global.typ</Object>
-    <Object Type="Program" Language="IEC">Main</Object>
+    <Object Type="Package">Documentation</Object>
+    <Object Type="Package">Source</Object>
   </Objects>
 </Package>

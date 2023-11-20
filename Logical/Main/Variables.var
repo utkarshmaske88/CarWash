@@ -1,4 +1,0 @@
-VAR
-	a : BOOL;
-	b : BOOL;
-END_VAR
