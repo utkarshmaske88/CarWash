@@ -13,7 +13,7 @@ TYPE
 	END_STRUCT;
 	EntryIOs_typ : 	STRUCT 
 		diSensEntry : BOOL;
-		diSensSoilLvl : BOOL;
+		diSensSoilLvl : REAL;
 	END_STRUCT;
 	EntryParam_typ : 	STRUCT 
 		CarLength : REAL;
@@ -21,5 +21,7 @@ TYPE
 	EntryStatus_typ : 	STRUCT 
 		Running : BOOL;
 		Error : BOOL;
+		CarGone : BOOL;
+		CarIN : BOOL;
 	END_STRUCT;
 END_TYPE

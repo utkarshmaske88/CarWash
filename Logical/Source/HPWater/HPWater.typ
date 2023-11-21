@@ -28,12 +28,5 @@ TYPE
 		Running : BOOL;
 		Error : BOOL;
 		ValveOpen : USINT;
-		New_Member6 : USINT;
-		New_Member5 : USINT;
-		New_Member4 : USINT;
-		New_Member3 : USINT;
-		New_Member2 : USINT;
-		New_Member1 : USINT;
-		New_Member : USINT;
 	END_STRUCT;
 END_TYPE

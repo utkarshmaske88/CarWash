@@ -1,8 +1,5 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	iEntry : EntryCtrl_typ;
+	value : sStep;
+	iEntryState : sStep;
 END_VAR

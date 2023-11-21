@@ -12,11 +12,24 @@ TYPE
 		Status : VBrushStatus_typ;
 	END_STRUCT;
 	VBrushIOs_typ : 	STRUCT 
+		doRelayVBLClose : BOOL;
+		doRelayVBROpen : BOOL;
+		doRelayVBLOpen : BOOL;
+		doRelayVBRClose : BOOL;
+		aiVBRForceS : REAL;
+		aiVBRForceF : REAL;
+		aiVBLForceS : REAL;
+		aiVBLForceF : REAL;
+		aoVBRRVelocity : REAL;
+		aoVBRLVelocity : REAL;
 	END_STRUCT;
 	VBrushParam_typ : 	STRUCT 
+		Velocity : USINT;
 	END_STRUCT;
 	VBrushStatus_typ : 	STRUCT 
 		Running : BOOL;
 		Error : BOOL;
+		ForceIN : BOOL;
+		Rotating : USINT;
 	END_STRUCT;
 END_TYPE

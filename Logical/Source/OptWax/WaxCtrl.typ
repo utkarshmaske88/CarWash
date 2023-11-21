@@ -12,11 +12,16 @@ TYPE
 		Status : WaxStatus_typ;
 	END_STRUCT;
 	WaxIOs_typ : 	STRUCT 
+		doValveWax : USINT;
+		doRealyWaxPump : USINT;
+		doRefillWax : USINT;
 	END_STRUCT;
 	WaxParam_typ : 	STRUCT 
 	END_STRUCT;
 	WaxStatus_typ : 	STRUCT 
 		Running : BOOL;
 		Error : BOOL;
+		PumpOn : BOOL;
+		ValveOpen : BOOL;
 	END_STRUCT;
 END_TYPE

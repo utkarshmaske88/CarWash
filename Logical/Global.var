@@ -1,8 +1,3 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	gCar : ARRAY[0..2] OF BOOL;
 END_VAR

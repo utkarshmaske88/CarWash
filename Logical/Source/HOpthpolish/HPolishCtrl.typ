@@ -12,6 +12,9 @@ TYPE
 		Status : PolishStatus_typ;
 	END_STRUCT;
 	PolishIOs_typ : 	STRUCT 
+		doRelayLower : USINT;
+		doRelayBrush : USINT;
+		doRelayLift : USINT;
 	END_STRUCT;
 	PolishParam_typ : 	STRUCT 
 	END_STRUCT;

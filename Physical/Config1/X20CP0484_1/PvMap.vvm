@@ -1,4 +1,7 @@
-
 VAR_CONFIG
-
+	::Auxillary:iAuxillary.doRelayConv AT %Q.::ComTCP_SimOutputs.doConvRelay; (*Insert your comment here...*)
+	::MainCtrl:ScalDirt.y AT %Q.::ChemCtrl:iChem.IO.aoChemChemValve; (*Insert your comment here...*)
+	::ComTCP_SimInputs.aiEntranceSoilLevel AT %Q.::EntryCtrl:iEntry.IO.diSensSoilLvl; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diEntranceSensor AT %Q.::EntryCtrl:iEntry.IO.diSensEntry; (*Insert your comment here...*)
+	::ChemCtrl:iChem.IO.doChemWaterValve AT %Q.::ComTCP_SimOutputs.doChemWaterValve; (*Insert your comment here...*)
 END_VAR

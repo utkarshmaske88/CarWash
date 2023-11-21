@@ -12,11 +12,15 @@ TYPE
 		Status : UBStatus_typ;
 	END_STRUCT;
 	UBIOs_typ : 	STRUCT 
+		doValveUB : BOOL;
+		doRelayPump : BOOL;
 	END_STRUCT;
 	UBParam_typ : 	STRUCT 
 	END_STRUCT;
 	UBStatus_typ : 	STRUCT 
 		Running : BOOL;
 		Error : BOOL;
+		PumpOpen : BOOL;
+		ValveOpen : BOOL;
 	END_STRUCT;
 END_TYPE

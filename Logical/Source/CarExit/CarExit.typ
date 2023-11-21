@@ -12,11 +12,18 @@ TYPE
 		Status : CarExitStatus_typ;
 	END_STRUCT;
 	CarExitIOs_typ : 	STRUCT 
+		doGreenLight : BOOL;
+		doRelayLowerdDoor : BOOL;
+		doRelayLiftDoor : BOOL;
+		doRedLight : BOOL;
+		doOrangeLight : BOOL;
 	END_STRUCT;
 	CarExitParam_typ : 	STRUCT 
 	END_STRUCT;
 	CarExitStatus_typ : 	STRUCT 
 		Running : BOOL;
 		Error : BOOL;
+		LiftingDoor : BOOL;
+		LowringDoor : BOOL;
 	END_STRUCT;
 END_TYPE
