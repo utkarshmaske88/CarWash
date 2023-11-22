@@ -20,24 +20,11 @@ PROGRAM _CYCLIC
 	
 	ScalDirt(x:=pEntryCtrl.IO.diSensSoilLvl ,y1:=5,x2:=10,y2:=0);
 
-<<<<<<< HEAD
-	IF MainCtrl.Start=TRUE THEN
-		pAuxCtrl.doRelayConv:=TRUE;
-		MainCtrl.Start:=FALSE;
-		MainCmd.EntryState:=TRUE;
-		iFl_CarFlag :=TRUE;
-=======
 	IF gMain.Cmd.Start = TRUE THEN
 		pAuxCtrl.doRelayConv	:= TRUE;
 		gMain.Cmd.Start			:= FALSE;
 		gMain.Option.EntryState	:= TRUE;
-		FOR i:=0 TO 3 DO
-			IF gCar[i]=FALSE THEN 
-				gCar[i]:=TRUE;
-				EXIT;
-			END_IF;
-		END_FOR;
->>>>>>> 761fb287fae0fd043a9a0779a6583211a83b02fb
+		iFl_CarFlag :=TRUE ;
 	END_IF;
 	
 	IF (gMain.Option.EntryState = TRUE) THEN

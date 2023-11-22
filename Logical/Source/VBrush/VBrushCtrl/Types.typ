@@ -3,6 +3,9 @@ TYPE
 	sStep_enum : 
 		(
 		enWAIT,
+		enSTART,
+		enOPEN,
+		enCLOSE,
 		enOPERATION,
 		enERROR
 		);
