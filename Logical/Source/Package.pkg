@@ -10,12 +10,16 @@
     <Object Type="Package">VBrush</Object>
     <Object Type="Package">OptUnderBody</Object>
     <Object Type="Package">OptVpolish</Object>
+    <Object Type="Package">HOpthpolish</Object>
     <Object Type="Package">OptWax</Object>
     <Object Type="Package">Drying</Object>
     <Object Type="Package">CarExit</Object>
     <Object Type="Package">Infrastructure</Object>
     <Object Type="Package">VisuCtrl</Object>
+<<<<<<< HEAD
     <Object Type="Package">Optpolish</Object>
+=======
+>>>>>>> edcf355ccd2dc5a058ed4214cc82538d90d7c920
     <Object Type="Package">Auxillary</Object>
   </Objects>
 </Package>

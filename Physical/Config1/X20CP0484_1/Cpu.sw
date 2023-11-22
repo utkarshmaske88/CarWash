@@ -19,7 +19,11 @@
     <Task Name="DataCtrl" Source="Source.Infrastructure.DataCtrl.DataCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="RecipeCtrl" Source="Source.Infrastructure.RecipeCtrl.RecipeCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="VisuCtrl" Source="Source.VisuCtrl.VisuCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+<<<<<<< HEAD
     <Task Name="HPolishCtr" Source="Source.Optpolish.HPolishCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+=======
+    <Task Name="HPolish" Source="Source.HOpthpolish.HPolish.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+>>>>>>> edcf355ccd2dc5a058ed4214cc82538d90d7c920
     <Task Name="Auxillary" Source="Source.Auxillary.Auxillary.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="DryVCtrl1" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <Task Name="MainCtrl1" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -29,7 +33,9 @@
   <TaskClass Name="Cyclic#4" />
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
-  <TaskClass Name="Cyclic#7" />
+  <TaskClass Name="Cyclic#7">
+    <Task Name="Dist" Source="Dist.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+  </TaskClass>
   <TaskClass Name="Cyclic#8" />
   <Binaries>
     <BinaryObject Name="FWRules" Source="" Memory="UserROM" Language="Binary" />

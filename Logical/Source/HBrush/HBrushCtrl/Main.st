@@ -10,7 +10,6 @@ PROGRAM _CYCLIC
 		enWAIT:
 			IF iHBrush.Cmd.Start = TRUE THEN
 				sHBrushState				:= enSTART;
-				iHBrush.IO.doValveHB		:= TRUE;
 			END_IF;
 		enSTART:
 			IF (iHBrush.IO.diSensHB1 = FALSE) AND (iHBrush.IO.diSensHB2 = FALSE) AND (iHBrush.IO.diSensHB3 = FALSE) AND (iHBrush.IO.diSensHB4 = FALSE) THEN
@@ -21,6 +20,7 @@ PROGRAM _CYCLIC
 				iHBrush.IO.doRelayHBLower	:= FALSE;
 				iHBrush.IO.doRelayHBLift	:= FALSE;
 				iHBrush.IO.doRelayHBBrush	:= TRUE;
+				iHBrush.IO.doValveHB		:= TRUE;
 				sHBrushState				:= enOPERATION;
 			END_IF;
 		enOPERATION:
@@ -49,10 +49,9 @@ PROGRAM _CYCLIC
 				iHBrush.IO.doRelayHBLift	:= FALSE;
 				iHBrush.IO.doRelayHBBrush	:= FALSE;
 				iHBrush.IO.doValveHB		:= FALSE;
-				iHBrush.Cmd.Start		:= FALSE;
+				iHBrush.Cmd.Start			:= FALSE;
 				sHBrushState				:= enWAIT;
 			END_IF;
-		
 
 	END_CASE;
 	

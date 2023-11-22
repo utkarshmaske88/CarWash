@@ -24,7 +24,8 @@ TYPE
 		aoVBRLVelocity : REAL;
 	END_STRUCT;
 	VBrushParam_typ : 	STRUCT 
-		Velocity : USINT;
+		LeftVel : REAL := 5.0;
+		RightVel : REAL := 5.0;
 	END_STRUCT;
 	VBrushStatus_typ : 	STRUCT 
 		Running : BOOL;
