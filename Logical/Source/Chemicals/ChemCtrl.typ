@@ -4,6 +4,7 @@ TYPE
 		Start : BOOL;
 		EStop : BOOL;
 		Stop : BOOL;
+		ErrorReset : BOOL;
 	END_STRUCT;
 	ChemCtrl_typ : 	STRUCT 
 		Cmd : ChemCmd_typ;
@@ -24,5 +25,6 @@ TYPE
 		Error : BOOL;
 		ChemHigh : BOOL;
 		ChemLow : BOOL;
+		SprayON : BOOL;
 	END_STRUCT;
 END_TYPE

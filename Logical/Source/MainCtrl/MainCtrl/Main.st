@@ -20,12 +20,7 @@ PROGRAM _CYCLIC
 		pAuxCtrl.doRelayConv:=TRUE;
 		MainCtrl.Start:=FALSE;
 		MainCmd.EntryState:=TRUE;
-		FOR i:=0 TO 3 DO
-			IF gCar[i]=FALSE THEN 
-				gCar[i]:=TRUE;
-				EXIT;
-			END_IF;
-		END_FOR;
+		iFl_CarFlag :=TRUE;
 	END_IF;
 	
 	IF MainCmd.EntryState = TRUE THEN
@@ -34,8 +29,18 @@ PROGRAM _CYCLIC
 		txt:="entry";
 		
 		IF pEntryCtrl.IO.diSensEntry=TRUE THEN
-			iFb_Timer[0].IN:=TRUE;
+			IF iFl_CarFlag =TRUE THEN
+				FOR i:=0 TO 3 DO
+					IF gCar[i]=FALSE THEN 
+						gCar[i]:=TRUE;
+						iFb_Timer[i].IN:=TRUE;
+						iFl_CarFlag :=FALSE;
+						EXIT;
+					END_IF;
+				END_FOR;
+			END_IF;
 		END_IF;
+	
 		
 	END_IF;
 	

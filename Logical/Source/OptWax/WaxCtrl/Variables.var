@@ -1,8 +1,4 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	iWax : WaxCtrl_typ;
+	iWaxState : sStep;
 END_VAR

@@ -4,6 +4,7 @@ TYPE
 		Start : BOOL;
 		EStop : BOOL;
 		Stop : BOOL;
+		ErrorReset : BOOL;
 	END_STRUCT;
 	EntryCtrl_typ : 	STRUCT 
 		Cmd : EntryCmd_typ;

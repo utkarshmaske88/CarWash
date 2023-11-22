@@ -4,6 +4,7 @@ TYPE
 		Start : BOOL;
 		EStop : BOOL;
 		Stop : BOOL;
+		ErrorReset : BOOL;
 	END_STRUCT;
 	WaxCtrl_typ : 	STRUCT 
 		Cmd : WaxCmd_typ;
@@ -12,11 +13,12 @@ TYPE
 		Status : WaxStatus_typ;
 	END_STRUCT;
 	WaxIOs_typ : 	STRUCT 
-		doValveWax : USINT;
-		doRealyWaxPump : USINT;
-		doRefillWax : USINT;
+		doValveWax : BOOL;
+		doRealyWaxPump : BOOL;
+		doRefillWax : BOOL;
 	END_STRUCT;
 	WaxParam_typ : 	STRUCT 
+		New_Member : USINT;
 	END_STRUCT;
 	WaxStatus_typ : 	STRUCT 
 		Running : BOOL;

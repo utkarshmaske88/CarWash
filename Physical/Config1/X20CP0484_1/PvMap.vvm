@@ -1,7 +1,12 @@
 VAR_CONFIG
+	::WaxCtrl:iWax.IO.doValveWax AT %Q.::ComTCP_SimOutputs.doWaxValve; (*Insert your comment here...*)
 	::Auxillary:iAuxillary.doRelayConv AT %Q.::ComTCP_SimOutputs.doConvRelay; (*Insert your comment here...*)
 	::MainCtrl:ScalDirt.y AT %Q.::ChemCtrl:iChem.IO.aoChemChemValve; (*Insert your comment here...*)
 	::ComTCP_SimInputs.aiEntranceSoilLevel AT %Q.::EntryCtrl:iEntry.IO.diSensSoilLvl; (*Insert your comment here...*)
 	::ComTCP_SimInputs.diEntranceSensor AT %Q.::EntryCtrl:iEntry.IO.diSensEntry; (*Insert your comment here...*)
 	::ChemCtrl:iChem.IO.doChemWaterValve AT %Q.::ComTCP_SimOutputs.doChemWaterValve; (*Insert your comment here...*)
+	::UBCtrl:iUBody.IO.doValveUB AT %Q.::ComTCP_SimOutputs.doUnderbodyValve; (*Insert your comment here...*)
+	::UBCtrl:iUBody.IO.doRelayPump AT %Q.::ComTCP_SimOutputs.doUnderbodyPumpRelay; (*Insert your comment here...*)
+	::WaxCtrl:iWax.IO.doRealyWaxPump AT %Q.::ComTCP_SimOutputs.doWaxPumpRelay; (*Insert your comment here...*)
+	::WaxCtrl:iWax.IO.doRefillWax AT %Q.::ComTCP_SimOutputs.doWaxRefill; (*Insert your comment here...*)
 END_VAR

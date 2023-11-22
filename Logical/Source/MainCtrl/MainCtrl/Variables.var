@@ -20,4 +20,5 @@ VAR
 	txt : WSTRING[80];
 	txt1 : WSTRING[80];
 	iFb_Timer : ARRAY[0..2] OF TON := [3((PT:=T#147720ms))];
+	iFl_CarFlag : BOOL;
 END_VAR
