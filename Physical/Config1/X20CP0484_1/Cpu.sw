@@ -30,7 +30,9 @@
   <TaskClass Name="Cyclic#4" />
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
-  <TaskClass Name="Cyclic#7" />
+  <TaskClass Name="Cyclic#7">
+    <Task Name="Dist" Source="Dist.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+  </TaskClass>
   <TaskClass Name="Cyclic#8" />
   <Binaries>
     <BinaryObject Name="FWRules" Source="" Memory="UserROM" Language="Binary" />

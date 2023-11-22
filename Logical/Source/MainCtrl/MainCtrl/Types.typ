@@ -18,6 +18,9 @@ TYPE
 		HighPress : BOOL;
 		HBrush : BOOL;
 		Polish : BOOL;
+		UnderBody : BOOL;
+		Wax : BOOL;
+		VBrush : BOOL;
 	END_STRUCT;
 	MainCtrl_typ : 	STRUCT 
 		Cmd : MainCmd_typ;

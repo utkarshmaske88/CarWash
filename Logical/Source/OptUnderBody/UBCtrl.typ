@@ -4,6 +4,7 @@ TYPE
 		Start : BOOL;
 		EStop : BOOL;
 		Stop : BOOL;
+		ErrorReset : USINT;
 	END_STRUCT;
 	UBCtrl_typ : 	STRUCT 
 		Cmd : UBCmd_typ;
@@ -16,6 +17,7 @@ TYPE
 		doRelayPump : BOOL;
 	END_STRUCT;
 	UBParam_typ : 	STRUCT 
+		New_Member : USINT;
 	END_STRUCT;
 	UBStatus_typ : 	STRUCT 
 		Running : BOOL;

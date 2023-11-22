@@ -1,5 +1,4 @@
 VAR
 	iEntry : EntryCtrl_typ;
-	value : sStep;
 	iEntryState : sStep;
 END_VAR

@@ -9,5 +9,6 @@
     <Object Type="Package">Documentation</Object>
     <Object Type="Package">Source</Object>
     <Object Type="Package">mappView</Object>
+    <Object Type="Program" Language="IEC">Dist</Object>
   </Objects>
 </Package>
