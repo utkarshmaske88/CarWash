@@ -7,8 +7,6 @@ VAR
 	pChemCtrl : REFERENCE TO ChemCtrl_typ; (*pointer*)
 	SizeEntry : UDINT; (*size of foil*)
 	EntryAddress : UDINT; (*Address of foil*)
-	MainCmd : MainCmd_typ;
-	MainCtrl : MainCtrl_typ;
 	New_Variable : USINT;
 	Car : INT;
 	Status3 : UINT; (*status*)
@@ -20,5 +18,17 @@ VAR
 	txt : WSTRING[80];
 	txt1 : WSTRING[80];
 	iFb_Timer : ARRAY[0..2] OF TON := [3((PT:=T#147720ms))];
+<<<<<<< HEAD
 	iFl_CarFlag : BOOL;
+=======
+	Status4 : UINT;
+	HPAddress : UDINT;
+	SizeHP : UDINT;
+	pHPCtrl : REFERENCE TO HPWaterCtrl_typ;
+	gMain : MainCtrl_typ;
+	Status5 : UINT;
+	HBAddress : UDINT;
+	SizeHBrush : UDINT;
+	pHBrushCtrl : REFERENCE TO HBrushCtrl_typ;
+>>>>>>> 761fb287fae0fd043a9a0779a6583211a83b02fb
 END_VAR
