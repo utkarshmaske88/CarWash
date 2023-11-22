@@ -4,9 +4,7 @@ TYPE
 		(
 		enWAIT,
 		enSTART,
-		enLIFTDOWN,
-		enLIFTSTABLE,
-		enLIFTUP,
+		enOPERATION,
 		enERROR
 		);
 END_TYPE

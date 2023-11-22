@@ -1,4 +1,23 @@
-
 VAR_CONFIG
-
+	::MainCtrl:ScalDirt.y AT %Q.::ChemCtrl:iChem.IO.aoChemChemValve; (*Insert your comment here...*)
+	::ComTCP_SimInputs.aiEntranceSoilLevel AT %Q.::EntryCtrl:iEntry.IO.diSensSoilLvl; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diEntranceSensor AT %Q.::EntryCtrl:iEntry.IO.diSensEntry; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diHighPressSensor1 AT %Q.::HPWater:iHighPress.IO.diSensHP1; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diHighPressSensor2 AT %Q.::HPWater:iHighPress.IO.diSensHP2; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diHighPressSensor3 AT %Q.::HPWater:iHighPress.IO.diSensHP3; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diHighPressSensor4 AT %Q.::HPWater:iHighPress.IO.diSensHP4; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diHBrushSensor1 AT %Q.::HBrushCtrl:iHBrush.IO.diSensHB1; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diHBrushSensor2 AT %Q.::HBrushCtrl:iHBrush.IO.diSensHB2; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diHBrushSensor3 AT %Q.::HBrushCtrl:iHBrush.IO.diSensHB3; (*Insert your comment here...*)
+	::ComTCP_SimInputs.diHBrushSensor4 AT %Q.::HBrushCtrl:iHBrush.IO.diSensHB4; (*Insert your comment here...*)
+	::ChemCtrl:iChem.IO.doChemWaterValve AT %Q.::ComTCP_SimOutputs.doChemWaterValve; (*Insert your comment here...*)
+	::Auxillary:iAuxillary.doRelayConv AT %Q.::ComTCP_SimOutputs.doConvRelay; (*Insert your comment here...*)
+	::HPWater:iHighPress.IO.doRelayHPLift AT %Q.::ComTCP_SimOutputs.doHighPressLiftRelay; (*Insert your comment here...*)
+	::HPWater:iHighPress.IO.doRelayHPLow AT %Q.::ComTCP_SimOutputs.doHighPressLowerRelay; (*Insert your comment here...*)
+	::HPWater:iHighPress.IO.doRelayHPPump AT %Q.::ComTCP_SimOutputs.doHighPressPumpRelay; (*Insert your comment here...*)
+	::HPWater:iHighPress.IO.doValveHP AT %Q.::ComTCP_SimOutputs.doHighPressValve; (*Insert your comment here...*)
+	::HBrushCtrl:iHBrush.IO.doRelayHBLift AT %Q.::ComTCP_SimOutputs.doHBrushLiftRelay; (*Insert your comment here...*)
+	::HBrushCtrl:iHBrush.IO.doRelayHBLower AT %Q.::ComTCP_SimOutputs.doHBrushLowerRelay; (*Insert your comment here...*)
+	::HBrushCtrl:iHBrush.IO.doRelayHBBrush AT %Q.::ComTCP_SimOutputs.doHBrushBrushRelay; (*Insert your comment here...*)
+	::HBrushCtrl:iHBrush.IO.doValveHB AT %Q.::ComTCP_SimOutputs.doHBrushValve; (*Insert your comment here...*)
 END_VAR
