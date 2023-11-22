@@ -1,4 +1,0 @@
-VAR
-	sHighPressState : HighPressureState_enum;
-	iHighPress : HPWaterCtrl_typ;
-END_VAR

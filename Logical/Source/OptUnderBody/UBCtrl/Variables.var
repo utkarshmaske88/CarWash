@@ -1,4 +1,0 @@
-VAR
-	iUBody : UBCtrl_typ;
-	iUBodyState : sStep;
-END_VAR

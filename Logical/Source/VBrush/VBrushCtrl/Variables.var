@@ -1,4 +1,0 @@
-VAR
-	iVBrush : VBrushCtrl_typ;
-	sVBrushState : sStep_enum;
-END_VAR
