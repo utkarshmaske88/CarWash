@@ -20,7 +20,7 @@
     <Task Name="DataCtrl" Source="Source.Infrastructure.DataCtrl.DataCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="RecipeCtrl" Source="Source.Infrastructure.RecipeCtrl.RecipeCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="VisuCtrl" Source="Source.VisuCtrl.VisuCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="HPolishCtr" Source="Source.HOpthpolish.HPolishCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="HPolish" Source="Source.HOpthpolish.HPolish.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Auxillary" Source="Source.Auxillary.Auxillary.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="DryVCtrl1" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <Task Name="MainCtrl1" Source="" Memory="UserROM" Language="Binary" Debugging="true" />

@@ -17,6 +17,7 @@ TYPE
 		ChemicalState : BOOL;
 		HighPress : BOOL;
 		HBrush : BOOL;
+		Polish : BOOL;
 	END_STRUCT;
 	MainCtrl_typ : 	STRUCT 
 		Cmd : MainCmd_typ;

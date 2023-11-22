@@ -27,4 +27,8 @@ VAR
 	HBAddress : UDINT;
 	SizeHBrush : UDINT;
 	pHBrushCtrl : REFERENCE TO HBrushCtrl_typ;
+	Status6 : UINT;
+	HPolishAddress : UDINT;
+	SizeHPolish : UDINT;
+	pHPolish : REFERENCE TO PolishCtrl_typ;
 END_VAR

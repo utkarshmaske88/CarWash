@@ -7,6 +7,7 @@ PROGRAM _INIT
 	Status3 := PV_xgetadr(ADR('Auxillary:iAuxillary'),ADR(AuxAddress),ADR(SizeAux));
 	Status4	:= PV_xgetadr(ADR('HPWater:iHighPress'), ADR(HPAddress), ADR(SizeHP));
 	Status5	:= PV_xgetadr(ADR('HBrushCtrl:iHBrush'), ADR(HBAddress), ADR(SizeHBrush));
+	Status6	:= PV_xgetadr(ADR('HPolish:iHPolish'), ADR(HPolishAddress), ADR(SizeHPolish));
 	 
 END_PROGRAM
 
@@ -17,6 +18,8 @@ PROGRAM _CYCLIC
 	pAuxCtrl ACCESS AuxAddress;
 	pHPCtrl ACCESS HPAddress;
 	pHBrushCtrl ACCESS HBAddress;
+	pHPolish ACCESS HPolishAddress;
+	
 	
 	ScalDirt(x:=pEntryCtrl.IO.diSensSoilLvl ,y1:=5,x2:=10,y2:=0);
 
@@ -65,13 +68,26 @@ PROGRAM _CYCLIC
 		gMain.Option.HighPress	:= FALSE;
 	END_IF;
 	
+	IF (iFb_Timer[0].ET > T#30650ms) AND (gMain.Option.HBrush = TRUE) THEN
+		txt	:= "Horizontal Brush";
+		pHBrushCtrl.Cmd.Start	:= TRUE;
+		gMain.Option.HighPress	:= FALSE;
+	END_IF;
 		
+	IF (iFb_Timer[0].ET > T#72000ms) AND (gMain.Option.Polish = TRUE) THEN
+		txt	:= "Polishing";
+		pHPolish.Cmd.Start	:= TRUE;
+		gMain.Option.HBrush	:= FALSE;
+	END_IF;
 	
 	
 	
 	
+	IF gMain.Cmd.EStop = TRUE THEN
+		iFb_Timer[0]();
+	END_IF;
 	
-	iFb_Timer[0]();
+		
 	
 END_PROGRAM
 
