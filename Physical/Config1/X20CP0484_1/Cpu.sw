@@ -4,7 +4,6 @@
   <TaskClass Name="Cyclic#1">
     <Task Name="ComTCP_P" Source="Libraries.ComTCP.ComTCP_P.prg" Memory="UserROM" Language="ANSIC" Debugging="true" />
     <Task Name="MainCtrl" Source="Source.MainCtrl.MainCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="DryVCtrl" Source="Source.Drying.DryVCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ComTCP_P1" Source="Libraries.ComTCP.ComTCP_P.prg" Memory="UserROM" Language="ANSIC" Debugging="true" />
     <Task Name="EntryCtrl" Source="Source.Entrance.EntryCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ChemCtrl" Source="Source.Chemicals.ChemCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -20,7 +19,7 @@
     <Task Name="DataCtrl" Source="Source.Infrastructure.DataCtrl.DataCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="RecipeCtrl" Source="Source.Infrastructure.RecipeCtrl.RecipeCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="VisuCtrl" Source="Source.VisuCtrl.VisuCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="HPolishCtr" Source="Source.HOpthpolish.HPolishCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="HPolishCtr" Source="Source.Optpolish.HPolishCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Auxillary" Source="Source.Auxillary.Auxillary.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="DryVCtrl1" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <Task Name="MainCtrl1" Source="" Memory="UserROM" Language="Binary" Debugging="true" />

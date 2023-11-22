@@ -1,8 +1,4 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	iExit : CarExitCtrl_typ;
+	sExitState : sStep_enum;
 END_VAR

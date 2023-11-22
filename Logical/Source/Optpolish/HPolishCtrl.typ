@@ -17,6 +17,7 @@ TYPE
 		doRelayLift : USINT;
 	END_STRUCT;
 	PolishParam_typ : 	STRUCT 
+		New_Member : USINT;
 	END_STRUCT;
 	PolishStatus_typ : 	STRUCT 
 		Running : BOOL;

@@ -15,7 +15,7 @@
     <Object Type="Package">CarExit</Object>
     <Object Type="Package">Infrastructure</Object>
     <Object Type="Package">VisuCtrl</Object>
-    <Object Type="Package">HOpthpolish</Object>
+    <Object Type="Package">Optpolish</Object>
     <Object Type="Package">Auxillary</Object>
   </Objects>
 </Package>

@@ -4,6 +4,7 @@ TYPE
 		Start : BOOL;
 		EStop : BOOL;
 		Stop : BOOL;
+		ErrorReset : BOOL;
 	END_STRUCT;
 	CarExitCtrl_typ : 	STRUCT 
 		Cmd : CarExitCmd_typ;
@@ -19,6 +20,7 @@ TYPE
 		doOrangeLight : BOOL;
 	END_STRUCT;
 	CarExitParam_typ : 	STRUCT 
+		New_Member : USINT;
 	END_STRUCT;
 	CarExitStatus_typ : 	STRUCT 
 		Running : BOOL;
