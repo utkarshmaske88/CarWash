@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="Library" Language="ANSIC">ComTCP_L</Object>
@@ -7,13 +8,13 @@
     <Object Type="File" Private="true">MNG_Package.var</Object>
   </Objects>
   <Dependencies>
-    <Dependency ObjectName="AsTCP"/>
-    <Dependency ObjectName="operator"/>
-    <Dependency ObjectName="runtime"/>
-    <Dependency ObjectName="astime"/>
-    <Dependency ObjectName="standard"/>
-    <Dependency ObjectName="ArEventLog"/>
-    <Dependency ObjectName="AsBrStr"/>
-    <Dependency ObjectName="AsIecCon"/>
+    <Dependency ObjectName="AsTCP" />
+    <Dependency ObjectName="operator" />
+    <Dependency ObjectName="runtime" />
+    <Dependency ObjectName="astime" />
+    <Dependency ObjectName="standard" />
+    <Dependency ObjectName="ArEventLog" />
+    <Dependency ObjectName="AsBrStr" />
+    <Dependency ObjectName="AsIecCon" />
   </Dependencies>
 </Package>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.3.5.113 SP?>
-<Library xmlns="http://br-automation.co.at/AS/Library">
+<?AutomationStudio FileVersion="4.9"?>
+<Library SubType="ANSIC" xmlns="http://br-automation.co.at/AS/Library">
   <Files>
     <File>MNG_InternalTyp.hpp</File>
     <File>MNG_ComHdlr.hpp</File>
